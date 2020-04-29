@@ -1,0 +1,33 @@
+{% macro display_sources(news_sources) %}
+
+<div class="row ">
+    {% for source in news_sources %}
+    <li class="list-unstyled m-4">
+        <a class="btn btn-primary" href="{{ url_for('news_articles', source=source.id) }}"
+            role="button">{{ source.name }}</a>
+    </li>
+    {% endfor %}
+</div>
+
+{% endmacro %}
+
+
+{% macro display_articles(news_articles) %}
+<div class="row justify-content-around">
+<div class="card" style="width: 18;">
+    <!-- <div class="row justify-content-around"> -->
+            {% for source in news_articles %}
+                <!-- <div class="col-md-4" > -->
+                    <img width="300px" class="card-img-top" src="{{ source.image_url }}" alt="">
+                        <!-- <h1>{{ source.title }}</h1> -->
+                        <div class="card-body">
+                            <p class="card-text"><span>{{ source.description }}</span></p>
+                            <button type="button" class="btn btn-info m-3" href="/">ReadMore</button>
+                            <h4>Published at :<span>{{ source.published }}</span></h4>
+                       </div>
+                <!-- </div> -->
+            {% endfor %}
+    <!-- </div> -->
+</div>
+</div>
+{% endmacro %}
