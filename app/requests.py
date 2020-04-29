@@ -11,6 +11,8 @@ news_sources_url = app.config["SOURCES_API_URL"]
 #Getting articles URL
 news_articles_url = app.config["ARTICLES_API_URL"]
 
+
+
 def process_sources(sources_list):
     all_sources = []
 

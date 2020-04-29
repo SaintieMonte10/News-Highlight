@@ -1,1 +1,2 @@
 NEWS_API_KEY = 'ad36819e6bfd40ba9275c04d41bc354e'
+SECRET_KEY = 'abcd'
