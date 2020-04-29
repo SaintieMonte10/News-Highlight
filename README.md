@@ -40,5 +40,8 @@ With the application, a user will be able to:
 - Flask
 - License
 
+## Contact Information
+Email: claremonte53@gmail.com
+
 ## Licence
 [Licence](./LICENCE)
