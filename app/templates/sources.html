@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% import "macros.html" as macro %}
+
+{% block title %} News Sources {% endblock %}
+
+{% block content %}
+    {{ macro.display_sources(news_sources) }}
+{% endblock %}
